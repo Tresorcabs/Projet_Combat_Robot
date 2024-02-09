@@ -6,6 +6,15 @@ Projet réalisé en JAVA natif qui simule un combat de Robots
 -+ Réaliser des Tests
 -+ Pousser ce projet sur GitHub
 
+# Actions réalisées 
+-+ Création des classes Robot.java, Arena.java la classe principal Robot.java 
+-+ Construction de la logique et implémentation dans les classes correspondantes
+-+ Déclaration des classes de Test et implémentation des tests dans les classes correspondantes
+
+# Tests éffectés
+-+  Test unitaire 
+-+  Test fonctionnel
+
 # But principal de ce projet
 -+ Le but principale de ce projet est l'apprentissage
 
