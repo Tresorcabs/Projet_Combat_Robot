@@ -11,7 +11,7 @@ Projet réalisé en JAVA natif qui simule un combat de Robots
 -+ Construction de la logique et implémentation dans les classes correspondantes
 -+ Déclaration des classes de Test et implémentation des tests dans les classes correspondantes
 
-# Tests éffectés
+# Tests éffectués
 -+  Test unitaire 
 -+  Test fonctionnel
 
