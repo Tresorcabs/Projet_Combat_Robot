@@ -4,22 +4,29 @@ package RobotFight;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        //-----> COMBAT ENTRE ROBOT ET HUMAIN
+
+   //-----> COMBAT ENTRE ROBOT ET ROBOT
+
+        System.out.println("-------> Premier combat entre Robot et Robot <-------");
+        System.out.println(" ");
 
         //CREATION DE 2 OBJETS ROBOT AVEC AFFICHAGE DU NOM A CHAQUE FOIS
         Robot robot1 = new Robot("DROID");
         System.out.println(robot1.afficherNom());
         Robot robot2 = new Robot("DATA");
         System.out.println(robot2.afficherNom());
-
-
+        System.out.println(" ");
 
         //--> LANCEMENT DU COMBAT AVEC 2 ROBOTS ET AFFICHAGE DU VAINQUEUR
        Robot RobotVainqueur = Arena.Fight(robot1, robot2);
        System.out.println("Le vainqueur est  "+RobotVainqueur.afficherNom());
 
-        //-----> COMBAT ENTRE ROBOT ET HUMAIN
-        System.out.println("Second combat entre humain et humain");
+
+  //FIN COMBAT
+
+  //-----> COMBAT ENTRE ROBOT ET HUMAIN
+        System.out.println(" ");
+        System.out.println("-------> Second combat entre humain et humain <-------");
         System.out.println(" ");
 
         //CREATION DE 2 OBJETS FIGHTER AVEC AFFICHAGE DU NOM A CHAQUE FOIS
@@ -32,12 +39,16 @@ public class Main {
         System.out.println(" ");
         System.out.println("le Vainqueur est " +Arena.Fight(John, Brad).afficherNom());
 
+  //FIN COMBAT
 
+
+
+/*
       System.out.println(" ");
         System.out.println("-----> Troisième combat entre humain et Robot <-----");
         System.out.println(" ");
 
-/*
+
         Robot robot3 = new Robot("FILS");
         System.out.println(robot3.afficherNom());
         System.out.println(robot3.point_De_Vie);

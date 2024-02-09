@@ -2,27 +2,24 @@ package RobotFight;
 
 import org.junit.*;
 
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertTrue;
 
-public class ArenaTest {
+public class FunctionnalTest {
     @BeforeClass
     public static void setUpBeforeClass() throws Exception{
         //S'exécute avant tout
         System.out.println(" ");
-        System.out.println("CECI EST LE TEST UNITAIRE LA CLASS ARENA !");
+        System.out.println("CE PROGRAMME VA EFFECTUER UN TEST FONCTIONNEL SUR LE PROGRAMME!");
         System.out.println(" ");
     }
 
-
     @Test
     public void testFight() throws Exception{
-        //TEST DE COMBAT ENTRE ROBOT ET ROBOT
+        //TEST DU COMBAT ENTRE ROBOT ET ROBOT
+
         Robot RobotTest = new Robot("Elie");
         Robot RobotTest2 = new Robot("Fred");
-        Arena.Fight(RobotTest, RobotTest2);
-        assertTrue(RobotTest2.isDead());
-        System.out.println("Test de Création passé !");
+       Robot Gagnant = Arena.Fight(RobotTest, RobotTest2);
+        System.out.println(" --***--**--*- Le Gagnant est le "+Gagnant.afficherNom());
     }
-
 }

@@ -1,6 +1,7 @@
 package RobotFight;
 
 public class Arena {
+    //METHODE QUI GERE LE COMBAT ENTRE ROBOT ET ROBOT
     public static Robot Fight(Robot robot1, Robot robot2){
         while (!robot1.isDead() && !robot2.isDead()){
             robot1.fire(robot2);
@@ -18,6 +19,10 @@ public class Arena {
         }
 
     }
+
+
+
+
 
 /*
     public static Robot Fight(Fighter Humain1, Robot robot2){
